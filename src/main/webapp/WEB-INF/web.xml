@@ -98,4 +98,23 @@
   	<url-pattern>/session-square</url-pattern>
   </servlet-mapping>
   
+  <!-- Servlet 11 -->
+  <servlet>
+  	<servlet-name>cookie-sqAdd</servlet-name>
+  	<servlet-class>com.raka.servlet.SqAddCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>cookie-sqAdd</servlet-name>
+  	<url-pattern>/cookie-sqAdd</url-pattern>
+  </servlet-mapping>
+  <!-- Servlet 12 -->
+  <servlet>
+  	<servlet-name>cookie-square</servlet-name>
+  	<servlet-class>com.raka.servlet.SquareCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>cookie-square</servlet-name>
+  	<url-pattern>/cookie-square</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

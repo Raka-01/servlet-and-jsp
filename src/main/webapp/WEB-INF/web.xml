@@ -79,4 +79,23 @@
   	<url-pattern>/send-square</url-pattern>
   </servlet-mapping>
   
+  <!-- Servlet 9 -->
+  <servlet>
+  	<servlet-name>session-sqAdd</servlet-name>
+  	<servlet-class>com.raka.servlet.SqAddHttpSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>session-sqAdd</servlet-name>
+  	<url-pattern>/session-sqAdd</url-pattern>
+  </servlet-mapping>
+  <!-- Servlet 10 -->
+  <servlet>
+  	<servlet-name>session-square</servlet-name>
+  	<servlet-class>com.raka.servlet.SquareHttpSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>session-square</servlet-name>
+  	<url-pattern>/session-square</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

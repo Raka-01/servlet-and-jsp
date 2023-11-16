@@ -60,4 +60,23 @@
   	<url-pattern>/rd-square</url-pattern>
   </servlet-mapping>
   
+  <!-- Servlet 7 -->
+  <servlet>
+  	<servlet-name>send-sqAdd</servlet-name>
+  	<servlet-class>com.raka.servlet.SqAddSendRedirect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>send-sqAdd</servlet-name>
+  	<url-pattern>/send-sqAdd</url-pattern>
+  </servlet-mapping>
+  <!-- Servlet 8 -->
+  <servlet>
+  	<servlet-name>send-square</servlet-name>
+  	<servlet-class>com.raka.servlet.SquareSendRedirect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>send-square</servlet-name>
+  	<url-pattern>/send-square</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

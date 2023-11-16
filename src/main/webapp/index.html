@@ -4,10 +4,32 @@
 </head>
 <body>
 	<!-- this action 'add'' will call the servlet /add and for that we have to create that servlet -->
-	<form action="add">
+	<form action="add">		<!-- By default, method is set to GET -->
 		Enter 1st number : <input type="text" name="num1"><br>
 		Enter 2nd number : <input type="text" name="num2"><br>
 		<input type="submit">
 	</form>
+	<br><br>
+	<form action="addGet" method="get">
+		GET Operation<br>
+		Enter 1st number : <input type="text" name="num1"><br>
+		Enter 2nd number : <input type="text" name="num2"><br>
+		<input type="submit">
+	</form>
+	<br><br>
+	<form action="addPost" method="post">
+		POST Operation<br>
+		Enter 1st number : <input type="text" name="num1"><br>
+		Enter 2nd number : <input type="text" name="num2"><br>
+		<input type="submit">
+	</form>
+	<br><br>
+	<form action="addGetPost" method="get">
+		GET/POST Operation<br>
+		Enter 1st number : <input type="text" name="num1"><br>
+		Enter 2nd number : <input type="text" name="num2"><br>
+		<input type="submit">
+	</form>
+	
 </body>
 </html>

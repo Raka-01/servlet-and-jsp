@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class SqAddServlet extends HttpServlet {
+public class SqAddRequestDispatcher extends HttpServlet {
 	
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		int a = Integer.parseInt(req.getParameter("num1"));
@@ -18,12 +18,12 @@ public class SqAddServlet extends HttpServlet {
 		int sumResult = a + b;
 		
 		PrintWriter writer = res.getWriter();
-		writer.println("SqAddServlet called");
+		System.out.println("SqAddRequestDispatcher servlet called");
 		writer.println("Add of numbers = " + sumResult);
 		
 		req.setAttribute("sumResult", sumResult);
 		
-		RequestDispatcher rd = req.getRequestDispatcher("square");
+		RequestDispatcher rd = req.getRequestDispatcher("rd-square");
 		rd.forward(req, res);
 	}
 

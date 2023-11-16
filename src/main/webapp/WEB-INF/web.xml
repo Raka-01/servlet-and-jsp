@@ -43,21 +43,21 @@
   
   <!-- Servlet 5 -->
   <servlet>
-  	<servlet-name>sqAdd</servlet-name>
-  	<servlet-class>com.raka.servlet.SqAddServlet</servlet-class>
+  	<servlet-name>rd-sqAdd</servlet-name>
+  	<servlet-class>com.raka.servlet.SqAddRequestDispatcher</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>sqAdd</servlet-name>
-  	<url-pattern>/sqAdd</url-pattern>
+  	<servlet-name>rd-sqAdd</servlet-name>
+  	<url-pattern>/rd-sqAdd</url-pattern>
   </servlet-mapping>
   <!-- Servlet 6 -->
   <servlet>
-  	<servlet-name>square</servlet-name>
-  	<servlet-class>com.raka.servlet.SquareServlet</servlet-class>
+  	<servlet-name>rd-square</servlet-name>
+  	<servlet-class>com.raka.servlet.SquareRequestDispatcher</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>square</servlet-name>
-  	<url-pattern>/square</url-pattern>
+  	<servlet-name>rd-square</servlet-name>
+  	<url-pattern>/rd-square</url-pattern>
   </servlet-mapping>
   
 </web-app>

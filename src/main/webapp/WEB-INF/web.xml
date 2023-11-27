@@ -117,4 +117,33 @@
   	<url-pattern>/cookie-square</url-pattern>
   </servlet-mapping>
   
+  <!-- Servlet 13 -->
+  <servlet>
+  	<servlet-name>context</servlet-name>
+  	<servlet-class>com.raka.servlet.ServletContextDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>context</servlet-name>
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Guruji</param-value>
+  </context-param>
+  
+  <!-- Servlet 14 -->
+  <servlet>
+  	<servlet-name>config</servlet-name>
+  	<servlet-class>com.raka.servlet.ServletConfigDemo</servlet-class>
+  	
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>ServletConfig</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>config</servlet-name>
+  	<url-pattern>/hey</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

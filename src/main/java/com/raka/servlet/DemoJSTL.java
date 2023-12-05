@@ -15,7 +15,10 @@ public class DemoJSTL extends HttpServlet {
 	public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		String name = "Radhe";
 		
+		Student student = new Student(1, "Rakesh");
+		
 		req.setAttribute("label", name);
+		req.setAttribute("student", student);
 		RequestDispatcher rd = req.getRequestDispatcher("display.jsp");
 		rd.forward(req, res);
 	}

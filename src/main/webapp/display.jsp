@@ -8,19 +8,26 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<!-- 
 	<%
 		String name = request.getAttribute("label").toString();
 		out.println(name);
 	%>
 	
 	<br>
-	Using expression language - ${label}		<!-- expression language -->
+	Using expression language - ${label}
 	
 	<br>
-	<!-- Using JSTL tag -->
 	Using JSTL tag - 
 	<c:out value="Hello World"></c:out>
 	<br>
 	<c:out value="${label}"></c:out>
+	-->
+	
+	<c:out value="Student hashcode - ${student}"></c:out><br>
+	<c:out value="Student Name - ${student.name}"></c:out><br>
+	<c:out value="Student Roll No - ${student.rollNo}"></c:out>
+	
+	
 </body>
 </html>

@@ -1,149 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
-  
-  <!-- Servlet 1 -->
   <servlet>
-  	<servlet-name>adding numbers</servlet-name>
-  	<servlet-class>com.raka.servlet.AddNumbers</servlet-class>
+    <servlet-name>adding numbers</servlet-name>
+    <servlet-class>com.raka.servlet.AddNumbers</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>adding numbers</servlet-name>
-  	<url-pattern>/add</url-pattern>
+    <servlet-name>adding numbers</servlet-name>
+    <url-pattern>/add</url-pattern>
   </servlet-mapping>
-  
-  <!-- Servlet 2 -->
   <servlet>
-  	<servlet-name>AddNumbersGet</servlet-name>
-  	<servlet-class>com.raka.servlet.AddNumbersGet</servlet-class>
+    <servlet-name>AddNumbersGet</servlet-name>
+    <servlet-class>com.raka.servlet.AddNumbersGet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>AddNumbersGet</servlet-name>
-  	<url-pattern>/addGet</url-pattern>
+    <servlet-name>AddNumbersGet</servlet-name>
+    <url-pattern>/addGet</url-pattern>
   </servlet-mapping>
-  
-  <!-- Servlet 3 -->
   <servlet>
-  	<servlet-name>AddNumbersPost</servlet-name>
-  	<servlet-class>com.raka.servlet.AddNumbersPost</servlet-class>
+    <servlet-name>AddNumbersPost</servlet-name>
+    <servlet-class>com.raka.servlet.AddNumbersPost</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>AddNumbersPost</servlet-name>
-  	<url-pattern>/addPost</url-pattern>
+    <servlet-name>AddNumbersPost</servlet-name>
+    <url-pattern>/addPost</url-pattern>
   </servlet-mapping>
-  
-  <!-- Servlet 4 -->
   <servlet>
-  	<servlet-name>AddNumbersGetPost</servlet-name>
-  	<servlet-class>com.raka.servlet.AddNumbersGetPost</servlet-class>
+    <servlet-name>AddNumbersGetPost</servlet-name>
+    <servlet-class>com.raka.servlet.AddNumbersGetPost</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>AddNumbersGetPost</servlet-name>
-  	<url-pattern>/addGetPost</url-pattern>
+    <servlet-name>AddNumbersGetPost</servlet-name>
+    <url-pattern>/addGetPost</url-pattern>
   </servlet-mapping>
-  
-  <!-- Servlet 5 -->
   <servlet>
-  	<servlet-name>rd-sqAdd</servlet-name>
-  	<servlet-class>com.raka.servlet.SqAddRequestDispatcher</servlet-class>
+    <servlet-name>rd-sqAdd</servlet-name>
+    <servlet-class>com.raka.servlet.SqAddRequestDispatcher</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>rd-sqAdd</servlet-name>
-  	<url-pattern>/rd-sqAdd</url-pattern>
+    <servlet-name>rd-sqAdd</servlet-name>
+    <url-pattern>/rd-sqAdd</url-pattern>
   </servlet-mapping>
-  <!-- Servlet 6 -->
   <servlet>
-  	<servlet-name>rd-square</servlet-name>
-  	<servlet-class>com.raka.servlet.SquareRequestDispatcher</servlet-class>
+    <servlet-name>rd-square</servlet-name>
+    <servlet-class>com.raka.servlet.SquareRequestDispatcher</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>rd-square</servlet-name>
-  	<url-pattern>/rd-square</url-pattern>
+    <servlet-name>rd-square</servlet-name>
+    <url-pattern>/rd-square</url-pattern>
   </servlet-mapping>
-  
-  <!-- Servlet 7 -->
   <servlet>
-  	<servlet-name>send-sqAdd</servlet-name>
-  	<servlet-class>com.raka.servlet.SqAddSendRedirect</servlet-class>
+    <servlet-name>send-sqAdd</servlet-name>
+    <servlet-class>com.raka.servlet.SqAddSendRedirect</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>send-sqAdd</servlet-name>
-  	<url-pattern>/send-sqAdd</url-pattern>
+    <servlet-name>send-sqAdd</servlet-name>
+    <url-pattern>/send-sqAdd</url-pattern>
   </servlet-mapping>
-  <!-- Servlet 8 -->
   <servlet>
-  	<servlet-name>send-square</servlet-name>
-  	<servlet-class>com.raka.servlet.SquareSendRedirect</servlet-class>
+    <servlet-name>send-square</servlet-name>
+    <servlet-class>com.raka.servlet.SquareSendRedirect</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>send-square</servlet-name>
-  	<url-pattern>/send-square</url-pattern>
+    <servlet-name>send-square</servlet-name>
+    <url-pattern>/send-square</url-pattern>
   </servlet-mapping>
-  
-  <!-- Servlet 9 -->
   <servlet>
-  	<servlet-name>session-sqAdd</servlet-name>
-  	<servlet-class>com.raka.servlet.SqAddHttpSession</servlet-class>
+    <servlet-name>session-sqAdd</servlet-name>
+    <servlet-class>com.raka.servlet.SqAddHttpSession</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>session-sqAdd</servlet-name>
-  	<url-pattern>/session-sqAdd</url-pattern>
+    <servlet-name>session-sqAdd</servlet-name>
+    <url-pattern>/session-sqAdd</url-pattern>
   </servlet-mapping>
-  <!-- Servlet 10 -->
   <servlet>
-  	<servlet-name>session-square</servlet-name>
-  	<servlet-class>com.raka.servlet.SquareHttpSession</servlet-class>
+    <servlet-name>session-square</servlet-name>
+    <servlet-class>com.raka.servlet.SquareHttpSession</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>session-square</servlet-name>
-  	<url-pattern>/session-square</url-pattern>
+    <servlet-name>session-square</servlet-name>
+    <url-pattern>/session-square</url-pattern>
   </servlet-mapping>
-  
-  <!-- Servlet 11 -->
   <servlet>
-  	<servlet-name>cookie-sqAdd</servlet-name>
-  	<servlet-class>com.raka.servlet.SqAddCookie</servlet-class>
+    <servlet-name>cookie-sqAdd</servlet-name>
+    <servlet-class>com.raka.servlet.SqAddCookie</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>cookie-sqAdd</servlet-name>
-  	<url-pattern>/cookie-sqAdd</url-pattern>
+    <servlet-name>cookie-sqAdd</servlet-name>
+    <url-pattern>/cookie-sqAdd</url-pattern>
   </servlet-mapping>
-  <!-- Servlet 12 -->
   <servlet>
-  	<servlet-name>cookie-square</servlet-name>
-  	<servlet-class>com.raka.servlet.SquareCookie</servlet-class>
+    <servlet-name>cookie-square</servlet-name>
+    <servlet-class>com.raka.servlet.SquareCookie</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>cookie-square</servlet-name>
-  	<url-pattern>/cookie-square</url-pattern>
+    <servlet-name>cookie-square</servlet-name>
+    <url-pattern>/cookie-square</url-pattern>
   </servlet-mapping>
-  
-  <!-- Servlet 13 -->
   <servlet>
-  	<servlet-name>context</servlet-name>
-  	<servlet-class>com.raka.servlet.ServletContextDemo</servlet-class>
+    <servlet-name>context</servlet-name>
+    <servlet-class>com.raka.servlet.ServletContextDemo</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>context</servlet-name>
-  	<url-pattern>/hello</url-pattern>
+    <servlet-name>context</servlet-name>
+    <url-pattern>/hello</url-pattern>
   </servlet-mapping>
   <context-param>
-  	<param-name>name</param-name>
-  	<param-value>Guruji</param-value>
+    <param-name>name</param-name>
+    <param-value>Guruji</param-value>
   </context-param>
-  
-  <!-- Servlet 14 -->
   <servlet>
-  	<servlet-name>config</servlet-name>
-  	<servlet-class>com.raka.servlet.ServletConfigDemo</servlet-class>
-  	
-  	<init-param>
-  		<param-name>name</param-name>
-  		<param-value>ServletConfig</param-value>
-  	</init-param>
+    <servlet-name>config</servlet-name>
+    <servlet-class>com.raka.servlet.ServletConfigDemo</servlet-class>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>ServletConfig</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>config</servlet-name>
-  	<url-pattern>/hey</url-pattern>
+    <servlet-name>config</servlet-name>
+    <url-pattern>/hey</url-pattern>
   </servlet-mapping>
-  
+  <filter>
+    <display-name>IsEmpty</display-name>
+    <filter-name>IsEmpty</filter-name>
+    <filter-class>com.raka.servlet.filter.IsEmpty</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>IsEmpty</filter-name>
+    <url-pattern>/addStudent</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>IdFilter</display-name>
+    <filter-name>IdFilter</filter-name>
+    <filter-class>com.raka.servlet.filter.IdFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>IdFilter</filter-name>
+    <url-pattern>/addStudent</url-pattern>
+  </filter-mapping>
 </web-app>

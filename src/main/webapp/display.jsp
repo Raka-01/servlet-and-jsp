@@ -28,6 +28,17 @@
 	<c:out value="Student Name - ${student.name}"></c:out><br>
 	<c:out value="Student Roll No - ${student.rollNo}"></c:out>
 	
+	<br><br>
+	<c:out value="Student List : "></c:out><br>
+	<c:forEach items="${students}" var="student">
+		${student} <br>
+	</c:forEach>
+	
+	<br><br>
+	<c:out value="Student 1 : "></c:out><br>
+	<c:out value="Name - ${students[0].name}"></c:out><br>
+	<c:out value="Roll No - ${students[0].rollNo}"></c:out>
+	
 	
 </body>
 </html>

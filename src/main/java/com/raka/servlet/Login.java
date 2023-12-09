@@ -9,12 +9,16 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
+import com.raka.dao.LoginDao;
+
 /**
  * Servlet implementation class Login
  */
 @WebServlet("/Login")
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	LoginDao dao;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -25,10 +29,14 @@ public class Login extends HttpServlet {
 		String uname = request.getParameter("uname");
 		String pass = request.getParameter("pass");
 		
-		if (uname.equals("root") && pass.equals("root")) {
+		dao = new LoginDao();
+		boolean validUser = dao.verifyUser(uname, pass);
+		
+		if (validUser) {
 			HttpSession session = request.getSession();
 			session.setAttribute("uname", uname);
 			session.setAttribute("pass", pass);
+			session.setAttribute("validUser", validUser);
 			
 			response.sendRedirect("welcome.jsp");
 		}

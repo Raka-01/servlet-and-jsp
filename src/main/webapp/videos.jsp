@@ -19,7 +19,7 @@
 			if(session.getAttribute("uname") == null || session.getAttribute("pass") == null){
 				response.sendRedirect("login.jsp");
 			}
-			else if(!session.getAttribute("uname").equals("root") && !session.getAttribute("pass").equals("root")){
+			else if(session.getAttribute("validUser").equals(false)){
 				response.sendRedirect("login.jsp");
 			}
 		%>
